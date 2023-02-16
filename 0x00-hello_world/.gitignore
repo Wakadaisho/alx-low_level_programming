@@ -1,5 +1,5 @@
 c
-main.*
+*main.*
 *.o
 size32
 size64
