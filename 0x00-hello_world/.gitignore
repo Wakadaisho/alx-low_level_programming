@@ -3,3 +3,4 @@ main.*
 *.o
 size32
 size64
+a.out
