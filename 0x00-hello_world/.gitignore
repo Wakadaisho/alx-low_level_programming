@@ -1,0 +1,5 @@
+c
+main.*
+*.o
+size32
+size64
