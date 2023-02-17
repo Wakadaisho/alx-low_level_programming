@@ -12,12 +12,12 @@
  */
 int main(void)
 {
-	int n;
+	int n, lastDigit;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int lastDigit = n % 10 == 0 ? 0 : (n % 10) + (-10 * (n < 0));
+	lastDigit = n % 10 == 0 ? 0 : (n % 10) + (-10 * (n < 0));
 
 	printf("Last digit of %d is %d and is ", n, lastDigit);
 
