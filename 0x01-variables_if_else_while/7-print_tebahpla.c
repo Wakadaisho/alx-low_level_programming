@@ -1,12 +1,11 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 
 /**
  * main - Entry point
  *
- * Description: prints thei lowercase alphabet in reverse,
+ * Description: prints the lowercase alphabet in reverse,
  *		followed by a new line
+ *
  * Return: Always 0 (Success)
  */
 int main(void)
