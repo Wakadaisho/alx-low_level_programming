@@ -4,7 +4,7 @@
  * main - Entry point
  *
  * Description: prints all possible different combinations
- *		of two two-digit numbers
+ *		of two two-ditit numbers
  *
  * Return: Always 0 (Success)
  */
@@ -20,6 +20,9 @@ int main(void)
 			{
 				for (l = j + 1; l <= '9'; l++)
 				{
+					if (i >= k && j >= l)
+						continue;
+
 					putchar(i);
 					putchar(j);
 					putchar(' ');
@@ -31,7 +34,6 @@ int main(void)
 
 					putchar(',');
 					putchar(' ');
-
 				}
 			}
 		}
