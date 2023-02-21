@@ -10,7 +10,7 @@ int main(void)
 	char text[] = "_putchar\n";
 	int i, text_length = sizeof(text) / sizeof(char);
 
-	for (i = 0; i < text_length-1; i++)
+	for (i = 0; i < text_length - 1; i++)
 	{
 		_putchar(text[i]);
 	}
