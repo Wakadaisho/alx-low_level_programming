@@ -34,6 +34,7 @@ void fibonacci_sum(int n)
 	}
 	else
 	{
+		sum = 2;
 		while (c < n)
 		{
 			c = a + b;

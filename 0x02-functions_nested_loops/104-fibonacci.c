@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdio.h>
+#include <inttypes.h>
 
 /**
  * main - print the first 98 fibonacci numbers
@@ -21,30 +22,34 @@ int main(void)
  */
 void fibonacci_n(int n)
 {
-	unsigned long long int a = 1, b = 2, c;
-	int i = 3;
+	uint64_t a = 1, b = 2, c;
+	uint64_t large_n = n;
+	uint64_t i = 3;
+
 
 	if (n == 1)
 	{
-		printf("%llu", a);
+		printf("%" PRIu64 "", a);
 	}
 	else if (n == 2)
 	{
-		printf("%llu, %llu", a, b);
+		printf("%" PRIu64 ", ", a);
+		printf("%" PRIu64 "", b);
 	}
 	else
 	{
-		printf("%llu, %llu, ", a, b);
-		while (i < n)
+		printf("%" PRIu64 ", ", a);
+		printf("%" PRIu64 ", ", b);
+		while (i < large_n)
 		{
 			c = a + b;
-			printf("%llu, ", c);
+			printf("%" PRIu64 ", ", c);
 			a = b;
 			b = c;
 			i++;
 		}
 		c = a + b;
-		printf("%llu", c);
+		printf("%" PRIu64 "", c);
 	}
 
 	printf("\n");
