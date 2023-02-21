@@ -2,7 +2,7 @@
 
 /**
  * print_alphabet_x10 - call print_alphabet 10 times
- * 
+ *
  * Return: void
  */
 void print_alphabet_x10(void)
@@ -18,6 +18,8 @@ void print_alphabet_x10(void)
 			c++;
 		}
 		i++;
+		c = 'a';
+		_putchar('\n');
 	}
 }
 
