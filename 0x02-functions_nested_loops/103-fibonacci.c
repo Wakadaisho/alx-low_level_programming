@@ -22,7 +22,7 @@ int main(void)
  */
 void fibonacci_sum(int n)
 {
-	unsigned int a = 1, b = 2, c, sum;
+	int a = 1, b = 2, c, sum;
 
 	if (n == 1)
 	{
@@ -48,6 +48,6 @@ void fibonacci_sum(int n)
 		}
 	}
 
-	printf("%u\n", sum);
+	printf("%d\n", sum);
 }
 

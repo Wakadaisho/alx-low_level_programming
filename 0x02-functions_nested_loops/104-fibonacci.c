@@ -21,30 +21,30 @@ int main(void)
  */
 void fibonacci_n(int n)
 {
-	unsigned long int a = 1, b = 2, c;
+	unsigned long long int a = 1, b = 2, c;
 	int i = 3;
 
 	if (n == 1)
 	{
-		printf("%lu", a);
+		printf("%llu", a);
 	}
 	else if (n == 2)
 	{
-		printf("%lu, %lu", a, b);
+		printf("%llu, %llu", a, b);
 	}
 	else
 	{
-		printf("%lu, %lu, ", a, b);
+		printf("%llu, %llu, ", a, b);
 		while (i < n)
 		{
 			c = a + b;
-			printf("%lu, ", c);
+			printf("%llu, ", c);
 			a = b;
 			b = c;
 			i++;
 		}
 		c = a + b;
-		printf("%lu", c);
+		printf("%llu", c);
 	}
 
 	printf("\n");
