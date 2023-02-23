@@ -3,6 +3,6 @@
 !.gitignore
 !README.md
 !*.c
-
+!main.h
 *-main.c
 _putchar.c
