@@ -11,13 +11,13 @@ void print_number(int n)
 	if (n < 0)
 	{
 		n *= -1;
-		_putchar('-');
+		_putchar(45);
 	}
 
-
-	if (n / 10)		/* repeat till the first digit */
+	if (n / 10)
+	{
 		print_number(n / 10);
+	}
 
-	/* print the last digits up the recursion chain */
-	_putchar('0' + n % 10);
+	_putchar(48 + (n % 10));
 }
