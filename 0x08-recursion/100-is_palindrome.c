@@ -4,13 +4,12 @@
 /**
 * _end_of_string - get the end of string
 * @s: string
-* @t: last character in string (just before \0)
 *
 * Return: pointer to last string character
 */
 char *_end_of_string(char *s)
 {
-	if (*s == '\0' )
+	if (*s == '\0')
 		return (s - 1);
 	return (_end_of_string(s + 1));
 }
