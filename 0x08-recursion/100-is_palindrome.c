@@ -1,5 +1,20 @@
 #include "main.h"
 
+
+/**
+* _end_of_string - get the end of string
+* @s: string
+* @t: last character in string (just before \0)
+*
+* Return: pointer to last string character
+*/
+char *_end_of_string(char *s)
+{
+	if (*s == '\0' )
+		return (s - 1);
+	return (_end_of_string(s + 1));
+}
+
 /**
 * _test_palindrome - test whether a string is a palindrome
 * @s: start of string
@@ -27,11 +42,5 @@ int _test_palindrome(char *s, char *t)
 */
 int is_palindrome(char *s)
 {
-	char *t = s;
-
-	while (*t)
-		t++;
-	t--;	/* one before \0 */
-
-	return (_test_palindrome(s, t));
+	return (_test_palindrome(s, _end_of_string(s)));
 }
