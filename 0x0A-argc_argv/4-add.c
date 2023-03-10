@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
-
+#include "main.h"
 
 /**
  * _string_all_digits - checks whether a string is made of digits

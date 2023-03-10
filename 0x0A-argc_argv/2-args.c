@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - print all arguments passed to it
@@ -10,7 +11,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int args = 1;
+	int args = 0;
 
 	while (args < argc)
 		printf("%s\n", argv[args++]);
