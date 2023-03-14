@@ -19,7 +19,7 @@ char **strtow(char *str)
 	char *p;
 	char **words = malloc(num_of_words * sizeof(char *) + 1);
 
-	if (words == NULL)
+	if (words == NULL || num_of_words == 0)
 	{
 		return (NULL);
 	}
@@ -40,7 +40,6 @@ char **strtow(char *str)
 			len++;
 			str++;
 		}
-
 
 		*(words + i) = malloc(len * sizeof(char) + 1);
 
