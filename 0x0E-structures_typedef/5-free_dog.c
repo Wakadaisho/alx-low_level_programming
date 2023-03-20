@@ -3,19 +3,20 @@
 
 /**
  * free_dog - initialize a variable of type struct dog
- * @d - the struct to initialize
+ *
+ * @d: the struct to initialize
  *
  * Return: void
  */
 void free_dog(dog_t *d)
 {
-	if(d == NULL)
+	if (d == NULL)
 		return;
 
-	if(d->name)
+	if (d->name)
 		free(d->name);
 
-	if(d->owner)
+	if (d->owner)
 		free(d->owner);
 
 	free(d);

@@ -4,8 +4,8 @@
 /**
  * _strcpy - copy a string
  *
- * @dest - destination of copy
- * @src - source string
+ * @dest: destination of copy
+ * @src: source string
  *
  * Return: void
  */
@@ -24,10 +24,10 @@ void _strcpy(char *dest, char *src)
 
 /**
  * new_dog - initialize a variable of type struct dog
- * @d - the struct to initialize
- * @name - the name of the dog as a string
- * @age - the age of the dog as a float
- * @owner - the owner of the dog as a string
+ *
+ * @name: the name of the dog as a string
+ * @age: the age of the dog as a float
+ * @owner: the owner of the dog as a string
  *
  * Return: pointer to struct dog (typedef dog_t)
  */
@@ -64,5 +64,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	p_dog->age = age;
 	p_dog->owner = this_owner;
 
-	return p_dog;
+	return (p_dog);
 }

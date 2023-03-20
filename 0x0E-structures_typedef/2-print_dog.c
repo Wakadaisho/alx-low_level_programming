@@ -3,7 +3,9 @@
 
 /**
  * print_dog - print out a formatted dog struct
- * @d - the dog struct to print
+ *
+ * @d: the dog struct to print
+ *
  * Return: void
  */
 void print_dog(struct dog *d)
@@ -14,5 +16,5 @@ void print_dog(struct dog *d)
 	}
 	printf("Name: %s\n", d->name != NULL ? d->name : "(nil)");
 	printf("Age: %f\n", d->age);
-	printf("Owner: %s\n", d->owner != NULL? d->owner : "(nil)");
+	printf("Owner: %s\n", d->owner != NULL ? d->owner : "(nil)");
 }
