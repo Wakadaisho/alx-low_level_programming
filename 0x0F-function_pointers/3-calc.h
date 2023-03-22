@@ -64,13 +64,6 @@ int op_div(int a, int b);
  */
 int op_mod(int a, int b);
 
-/**
- * get_op_func - return a function corresponding to an operator
- *
- * @s: operator to match a function to
- *
- * Return: int (*)(int, int) - function that was as a binary operator
- */
-int (*get_op_func(char *s))(int, int);
+int (*get_op_func(char *s))(int a, int b);
 
 #endif /* _CALC_H_ */
