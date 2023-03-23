@@ -1,4 +1,4 @@
-# 0X0rF C - Function pointers
+# 0X0F C - Function pointers
 
 Learn how to define, initialize and make use of function pointers in C.
 
