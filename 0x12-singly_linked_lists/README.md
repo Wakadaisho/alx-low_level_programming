@@ -1,7 +1,6 @@
-# 0X0F C - Function pointers
+# 0X12 C - Singly linked lists
 
-Learn how to define, initialize and make use of function pointers in C.
+Learn how to define, initialize and make use of, and dispose singly linked lists in C.
 
-- What are function pointers and how to use them
-- What does a function pointer exactly hold
-- Where does a function pointer point to in the virtual memory
+- When and why using linked lists vs arrays
+- How to build and use linked lists
