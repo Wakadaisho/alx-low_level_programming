@@ -4,7 +4,7 @@
 /**
  * free_list - free a list_t list
  *
- * @head - beginning of list;
+ * @head: beginning of list;
  *
  * Return: void
  */

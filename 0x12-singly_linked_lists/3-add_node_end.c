@@ -5,8 +5,8 @@
 /**
  * add_node_end - add a new node to the end of a list_t list
  *
- * @head - beginning of list;
- * @str - list to be count elements
+ * @head: beginning of list;
+ * @str: list to be count elements
  *
  * Return:	address of the new element
  *		NULL on failure
