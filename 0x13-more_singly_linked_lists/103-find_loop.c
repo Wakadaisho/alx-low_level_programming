@@ -20,15 +20,23 @@ listint_t *find_listint_loop(listint_t *head)
 
 	while (s && f)
 	{
-		if (s == f)
-			return (f);
-
 		s = s->next;
-		if (s->next == NULL)
+		f = f->next;
+		if (f->next == NULL)
 			return (NULL);
-		f = s->next;
+		f = f->next;
+		if (s == f)
+			break;
+	}
+	if (f == NULL)
+		return (NULL);
+
+	s = head;
+	while (s != f)
+	{
+		s = s->next;
+		f = f->next;
 	}
 
-
-	return (NULL);
+	return (s);
 }
