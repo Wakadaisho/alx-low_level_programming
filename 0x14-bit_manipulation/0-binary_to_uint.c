@@ -13,7 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	unsigned int value = 0;
 	const char *p = b;
 
-	while (*p)
+	while (p && *p)
 	{
 		if (*p != '1' && *p != '0')
 			return (0);

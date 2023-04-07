@@ -13,6 +13,9 @@ int set_bit(unsigned long int *n, unsigned int index)
 {
 	unsigned long int i = 1;
 
+	if (n == NULL)
+		return (-1);
+
 	while (index--)
 		i <<= 1;
 

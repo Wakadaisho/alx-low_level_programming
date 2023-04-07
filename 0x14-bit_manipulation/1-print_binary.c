@@ -9,11 +9,13 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int i = 1;
+	if (n <= 1)
+	{
+		_putchar('0' + n);
+		return;
+	}
 
-	while ((i << 1) <= n)
-		i <<= 1;
+	print_binary(n / 2);
 
-	for (; i; i >>= 1)
-		_putchar('0' + (!!(n & i)));
+	_putchar('0' + n % 2);
 }
