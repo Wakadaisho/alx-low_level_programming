@@ -35,10 +35,18 @@ int main(int argc, char **argv)
 	do {
 		bytes_from = read(from_fd, buffer, 1024);
 		if (bytes_from == -1)
+		{
+			closeFd(to_fd);
+			closeFd(from_fd);
 			printError(98, argv);
+		}
 		bytes_to = write(to_fd, buffer, bytes_from);
 		if (bytes_to == -1)
+		{
+			closeFd(to_fd);
+			closeFd(from_fd);
 			printError(99, argv);
+		}
 	} while (bytes_from == 1024);
 	closeFd(from_fd);
 	closeFd(to_fd);
