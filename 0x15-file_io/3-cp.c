@@ -61,10 +61,10 @@ void printError(int code, char **argv)
 			dprintf(2, "Usage: cp file_from file_to\n");
 			break;
 		case 98:
-			dprintf(2, "Error: Can't read from %s", argv[1]);
+			dprintf(2, "Error: Can't read from %s\n", argv[1]);
 			break;
 		case 99:
-			dprintf(2, "Error: Can't write to %s", argv[2]);
+			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			break;
 		default:
 			break;
@@ -85,7 +85,7 @@ void closeFd(int fd)
 
 	if (ret == -1)
 	{
-		dprintf(2, "Error: Can't close fd %d", fd);
+		dprintf(2, "Error: Can't close fd %d\n", fd);
 		exit(100);
 	}
 }
