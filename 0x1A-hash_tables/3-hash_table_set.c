@@ -23,7 +23,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	result = add_node(&node, key, value);
 
-
 	if (result == NULL)
 		return (0);
 
@@ -41,8 +40,19 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
  */
 hash_node_t *add_node(hash_node_t **head, const char *key, const char *value)
 {
-	hash_node_t *new;
+	hash_node_t *new, *node;
 
+	node = *head;
+	while (node)
+	{
+		if (strcmp(node->key, key) == 0)
+		{
+			free(node->value);
+			node->value = strdup(value);
+			return (*head);
+		}
+		node = node->next;
+	}
 	new = malloc(sizeof(hash_node_t));
 	if (new == NULL)
 		return (NULL);
